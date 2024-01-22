@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25%;
+} 
+
+
+.gamingScreen{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 400px;
+}
+
+.gamingScreen h1{
+    font-size: 30px;
+}
+
+.player{
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player img{
+    height: 100px;
+}
+
+.gameControl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+}
+
+.gameControl h2{
+    padding-right: 20px;
+    font-size: 1rem;
+}
+
+.gameControl button{
+    width: 3.5rem;
+    padding: 7px;
+    border: none;
+    border-radius: 0.9rem;
+}
+
+.attackDiv{
+    display: flex;
+    align-items: center;
+}
+
+.healDiv{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.attackButton{
+    background-color: #FFFF01;
+}
+
+.healButton{
+    background-color: #7DFFFF;
+}
+
+.healthDiv{
+    font-size: 40px;
+}
+
+#result{
+    margin-top: 20px;
+    font-size: 40px;
+    color: green;
+}
+
+.gameButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameButtons button{
+    margin: 2rem 0;
+    width: 70px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+#autoPlay{
+    background-color: #02cf02;
+    margin-left: 30px;
+}
+
+#reset{
+    background-color: #FF8800;
+}
+
+audio{
+    display: none;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="gamingScreen">
+            <div class="player">
+                <h1 id="player1">Player 1</h1>
+                <img src="https://i.gifer.com/origin/00/0019f6845ceaa9347b881ccbe8f5644a_w200.gif" alt="Player1 img">
+                <div class="gameControl">
+                    <div class="attackDiv">
+                        <h2>Q:</h2>
+                        <button id="attack-btn-p1" class="attackButton">Attack</button>
+                    </div>
+                    <div class="healDiv">
+                        <h2>A:</h2>
+                        <button id="heal-btn-p1" class="healButton">Heal</button>
+                    </div>
+                </div>
+                <div class="healthDiv">
+                    <span id="player1Health">100</span>
+                </div>
+            </div>
+            
+            <div class="player">
+                <h1 id="player2">Player 2</h1>
+                <img src="https://i.gifer.com/origin/00/0019f6845ceaa9347b881ccbe8f5644a_w200.gif" alt="Player2 img">
+                <div class="gameControl">
+                    <div class="attackDiv">
+                        <h2>P:</h2>
+                        <button id="attack-btn-p2" class="attackButton">Attack</button>
+                    </div>
+                    <div class="healDiv">
+                        <h2>L:</h2>
+                        <button id="heal-btn-p2" class="healButton">Heal</button>
+                    </div>
+                </div>
+                <div class="healthDiv">
+                    <span id="player2Health">100</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="result"></div>
+
+        <div class="gameButtons">
+            <button id="reset">Reset</button>
+            <button id="autoPlay">Simulate</button>
+            
+        </div>
+    </div>
+
+    <audio id="p1attack" controls>
+        <source src="sounds/fastpunch.mp3" type="audio/mpeg"> 
+    </audio>
+    <audio id="p1heal" controls>
+        <source src="sounds/fastheal.mp3" type="audio/mpeg"> 
+    </audio>
+    <audio id="p2attack" controls>
+        <source src="sounds/quickhit.mp3" type="audio/mpeg"> 
+    </audio>
+    <audio id="p2heal" controls>
+        <source src="sounds/quickheal.mp3" type="audio/mpeg"> 
+    </audio>
+    <audio id="victory" controls>
+        <source src="sounds/victory.mp3" type="audio/mpeg"> 
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
